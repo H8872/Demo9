@@ -8,7 +8,19 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="954,194,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
+        <TextBox x:Name="leveysTextBox" HorizontalAlignment="Left" Margin="813,228,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150" Height="32"/>
+        <TextBlock x:Name="leveysTextBlock" HorizontalAlignment="Left" Margin="658,228,0,0" TextWrapping="Wrap" Text="Ikkunan Leveys (L):" VerticalAlignment="Top"/>
+        <TextBox x:Name="korkeusTextBox" HorizontalAlignment="Left" Margin="813,265,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150" Height="32"/>
+        <TextBlock x:Name="korkeusTextBlock" HorizontalAlignment="Left" Margin="658,265,0,0" TextWrapping="Wrap" Text="Ikkunan Korkeus (H):" VerticalAlignment="Top"/>
+        <TextBox x:Name="karmiTextBox" HorizontalAlignment="Left" Margin="813,302,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150" Height="32"/>
+        <TextBlock x:Name="karmiTextBlock" HorizontalAlignment="Left" Margin="658,302,0,0" TextWrapping="Wrap" Text="Karmin leveys (W):" VerticalAlignment="Top"/>
+        <Button x:Name="laskuButton" Content="Laske" HorizontalAlignment="Left" Margin="813,353,0,0" VerticalAlignment="Top" Height="32" Width="100" Click="laskuButton_Click"/>
+        <TextBox x:Name="iPATextBox" HorizontalAlignment="Left" Margin="813,407,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="32" Width="150"/>
+        <TextBlock x:Name="iPATextBlock" HorizontalAlignment="Left" Margin="658,407,0,0" TextWrapping="Wrap" Text="Ikkunan Pinta-Ala:" VerticalAlignment="Top"/>
+        <TextBox x:Name="lPATextBox" HorizontalAlignment="Left" Margin="813,444,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="32" Width="150"/>
+        <TextBlock x:Name="lPATextBlock" HorizontalAlignment="Left" Margin="658,444,0,0" TextWrapping="Wrap" Text="Lasin Pinta-Ala:" VerticalAlignment="Top"/>
+        <TextBox x:Name="piiriTextBox" HorizontalAlignment="Left" Margin="813,481,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="32" Width="150"/>
+        <TextBlock x:Name="piiriTextBlock" HorizontalAlignment="Left" Margin="658,481,0,0" TextWrapping="Wrap" Text="Karmin Piiri:" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>

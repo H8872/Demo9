@@ -22,9 +22,15 @@ namespace T3
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        int height, lenght, width, area, glassArea, cirlce;
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        private void laskuButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
