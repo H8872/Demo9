@@ -15,12 +15,18 @@
         <TextBox x:Name="karmiTextBox" HorizontalAlignment="Left" Margin="813,302,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150" Height="32"/>
         <TextBlock x:Name="karmiTextBlock" HorizontalAlignment="Left" Margin="658,302,0,0" TextWrapping="Wrap" Text="Karmin leveys (W):" VerticalAlignment="Top"/>
         <Button x:Name="laskuButton" Content="Laske" HorizontalAlignment="Left" Margin="813,353,0,0" VerticalAlignment="Top" Height="32" Width="100" Click="laskuButton_Click"/>
-        <TextBox x:Name="iPATextBox" HorizontalAlignment="Left" Margin="813,407,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="32" Width="150"/>
+        <TextBox x:Name="iPATextBox" HorizontalAlignment="Left" Margin="813,407,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="32" Width="150" IsReadOnly="True"/>
         <TextBlock x:Name="iPATextBlock" HorizontalAlignment="Left" Margin="658,407,0,0" TextWrapping="Wrap" Text="Ikkunan Pinta-Ala:" VerticalAlignment="Top"/>
-        <TextBox x:Name="lPATextBox" HorizontalAlignment="Left" Margin="813,444,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="32" Width="150"/>
+        <TextBox x:Name="lPATextBox" HorizontalAlignment="Left" Margin="813,444,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="32" Width="150" IsReadOnly="True"/>
         <TextBlock x:Name="lPATextBlock" HorizontalAlignment="Left" Margin="658,444,0,0" TextWrapping="Wrap" Text="Lasin Pinta-Ala:" VerticalAlignment="Top"/>
-        <TextBox x:Name="piiriTextBox" HorizontalAlignment="Left" Margin="813,481,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="32" Width="150"/>
+        <TextBox x:Name="piiriTextBox" HorizontalAlignment="Left" Margin="813,481,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="32" Width="150" IsReadOnly="True"/>
         <TextBlock x:Name="piiriTextBlock" HorizontalAlignment="Left" Margin="658,481,0,0" TextWrapping="Wrap" Text="Karmin Piiri:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="cmTextBlock" HorizontalAlignment="Left" Margin="968,269,0,0" TextWrapping="Wrap" Text="cm" VerticalAlignment="Top"/>
+        <TextBlock x:Name="cmTextBlock_Copy" HorizontalAlignment="Left" Margin="968,232,0,0" TextWrapping="Wrap" Text="cm" VerticalAlignment="Top"/>
+        <TextBlock x:Name="cmTextBlock_Copy1" HorizontalAlignment="Left" Margin="968,306,0,0" TextWrapping="Wrap" Text="cm" VerticalAlignment="Top"/>
+        <TextBlock x:Name="cmTextBlock_Copy2" HorizontalAlignment="Left" Margin="968,411,0,0" TextWrapping="Wrap" Text="cm^2" VerticalAlignment="Top"/>
+        <TextBlock x:Name="cmTextBlock_Copy3" HorizontalAlignment="Left" Margin="968,448,0,0" TextWrapping="Wrap" Text="cm^2" VerticalAlignment="Top"/>
+        <TextBlock x:Name="cmTextBlock_Copy4" HorizontalAlignment="Left" Margin="968,485,0,0" TextWrapping="Wrap" Text="cm" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>

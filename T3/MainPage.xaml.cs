@@ -22,7 +22,8 @@ namespace T3
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        int height, lenght, width, area, glassArea, cirlce;
+        double height, lenght, width, area, glassArea, cirlce;
+        bool result;
         public MainPage()
         {
             this.InitializeComponent();
@@ -30,7 +31,44 @@ namespace T3
 
         private void laskuButton_Click(object sender, RoutedEventArgs e)
         {
+            result = Double.TryParse(leveysTextBox.Text, out lenght);
+            if (result)
+            {
+                result = Double.TryParse(korkeusTextBox.Text, out height);
+                if (result)
+                {
+                    area = lenght * height;
+                    cirlce = (lenght * 2) + (height * 2);
 
+                    result = Double.TryParse(karmiTextBox.Text, out width);
+                    if(result)
+                    {
+                        height = height - (width*2);
+                        lenght = lenght - (width*2);
+                        glassArea = height * lenght;
+                    }
+                    else
+                    {
+                        glassArea = 0;
+                    }
+                }
+                else
+                {
+                    area = 0;
+                    glassArea = 0;
+                    cirlce = 0;
+                }
+            }
+            else
+            {
+                area = 0;
+                glassArea = 0;
+                cirlce = 0;
+            }
+
+            iPATextBox.Text = area.ToString("0.0");
+            lPATextBox.Text = glassArea.ToString("0.0");
+            piiriTextBox.Text = cirlce.ToString("0.0");
         }
     }
 }
